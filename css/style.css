@@ -1,0 +1,453 @@
+/***********/
+/* General */
+/***********/
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	overflow-x: hidden !important;
+	width: 100%;
+}
+
+#sky{
+	background: rgb(19,41,99); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(19,41,99,1) 0%, rgba(38,133,210,1) 61%, rgba(121,189,242,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(19,41,99,1)), color-stop(61%,rgba(38,133,210,1)), color-stop(100%,rgba(121,189,242,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(19,41,99,1) 0%,rgba(38,133,210,1) 61%,rgba(121,189,242,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(19,41,99,1) 0%,rgba(38,133,210,1) 61%,rgba(121,189,242,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(19,41,99,1) 0%,rgba(38,133,210,1) 61%,rgba(121,189,242,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(19,41,99,1) 0%,rgba(38,133,210,1) 61%,rgba(121,189,242,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#132963', endColorstr='#79bdf2',GradientType=0 ); /* IE6-9 */	
+}
+
+#ground{
+	position: relative;
+	background: rgb(107,70,30); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(107,70,30,1) 0%, rgba(138,88,36,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(107,70,30,1)), color-stop(100%,rgba(138,88,36,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(107,70,30,1) 0%,rgba(138,88,36,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(107,70,30,1) 0%,rgba(138,88,36,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(107,70,30,1) 0%,rgba(138,88,36,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(107,70,30,1) 0%,rgba(138,88,36,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b461e', endColorstr='#8a5824',GradientType=0 ); /* IE6-9 */
+}
+
+.parallex{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+
+/*******/
+/* nav */
+/*******/
+
+.current a{
+	color: red;
+}
+
+nav{
+	height: 1.3em;
+	width: 700px;
+	background-color: black;
+	position: fixed;
+		z-index: 10;
+		left: 50%;
+	margin-left: -355px;
+	padding: 0.5em;
+}
+
+nav ul{
+	width: 700px;
+	height: 100%;
+	margin: 0 auto;
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li{
+	float: left;
+	padding-left: 2em;
+	cursor: hand;
+	cursor: pointer;
+}
+
+nav ul li:first-child{
+	padding-left: 2.3em;
+}
+
+nav ul li a{
+	cursor: hand;
+	color: white;
+	text-decoration: none;
+}
+
+.fb-like{
+	position: fixed !important;
+		top: 5px;
+		right: 5px !important;
+	z-index: 10;
+	
+}
+/***********/
+/* welcome */
+/***********/
+
+#welcome{
+	padding-top: 3em;
+	height: 790px;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	background-image: url(../img/site/stars.png);
+	position: relative;
+}
+
+#welcome img[alt="Maturaball der BBS-Rohrbach"]{
+	height: 70%;
+}
+
+#welcome img[alt="Eröffnungsdatum"]{
+	height: 10%;
+	position: inline-block;
+}
+
+/**********************/
+/* gallery-maturanten */
+/**********************/
+
+.galleryCloud{
+	width: 280px !important;
+	float: left;
+	position: relative;
+	left: 0 !important;
+}
+
+.galleryCloud .cut{
+	width: 275px !important;
+}
+
+#gallery-maturanten #description{
+	position: absolute;
+	left: 50%;
+	top: -100px;
+	margin-left: -425px;
+	z-index: 1;
+}
+
+#gallery-maturanten{
+	height: 850px;
+	position: relative;
+	background-image: url(../img/site/stars2.png);
+	margin-bottom: 20em;
+}
+
+#gallery-maturanten ul{
+	position: relative;
+	list-style: none;
+	color: white;
+	z-index: 10;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	height: 60px;
+}
+
+#gallery-maturanten ul li{
+	float: left;
+	padding-left: 1em;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#gallery-maturanten ul li:hover{
+	font-size: 170%;
+}
+
+.active{
+	font-size: 170%;
+}
+
+#gallery-maturanten div{
+	display: block;
+	height: 200px;
+	position: relative;
+	z-index: 2;
+	left: -30em;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/site/miniwolke.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+}
+
+#gallery-maturanten div .cut{
+	position: absolute;
+	text-align: center;
+	bottom: 3px;
+	width: 280px;
+	margin-left: 0em;
+}
+
+#gallery-maturanten div a img{
+	text-align: center;
+	position: absolute;
+	width: 80px;
+	margin-left: 100px;
+	border-radius: 5px;
+}
+#gallery-maturanten #wrapNav{
+	width: 100%;
+	height: 100px;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+}
+/**************/
+/* sponsoring */
+/**************/
+
+#sponsoring{
+	margin-top: 5em;
+	text-align: center;
+	position: relative;
+}
+
+#sponsoring img{
+	height: 10em;
+	margin-right: 2em;
+	z-index: 3;
+}
+
+#sponsoring img[alt="parallax"]{
+	position: absolute;
+		left: 2%;
+		top: 120%;
+	z-index: 1;
+	height: 8em;
+}
+
+img[alt="parallax2"]{
+	position: absolute;
+		left: 80%;
+		top: 160%;
+	z-index: 10;
+	height: 12em;
+}
+
+#sponsoring img[alt="parallax3"]{
+	position: absolute;
+		left: 3%;
+		top: 200%;
+	z-index: 1;
+	height: 9em;
+}
+
+/****************/
+/* gallery-ball */
+/****************/
+
+#gallery{
+	height: 870px;
+}
+
+#gallery #wrapper{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 1%;
+	margin-bottom: 10%;
+}
+
+#gallery .gallery-thumb{
+	width: 49%;
+	background-color: white;
+	border: 3px dashed black;
+}
+
+
+#gallery #gallery-aufbau{
+	float: left;
+	text-align: center;
+	color: #BBBBBB;
+}
+
+#gallery p{
+	margin: 20% 10% 10% 10%;
+	font-size: 200%;
+}
+
+#gallery #gallery-ball{
+	float: right;
+	text-align: center;
+	color: #BBBBBB;
+}
+
+/********/
+/* bars */
+/********/
+
+#bars{
+	height: 1000px;
+	position: relative;
+	margin-top: 15em;
+}
+
+#bars img[alt="wiese"]{
+	position: absolute;
+		z-index: 4;
+		bottom: 0;
+	width: 100%;
+}
+
+#bars #peak{
+	position: absolute;
+		z-index: 6;
+		top: 99%;
+	width: 100%;
+	background-image: url(../img/site/peak.png);
+	background-repeat: repeat-x;
+}
+
+#bars img[alt="berge"]{
+	position: absolute;
+		z-index: 2;
+		bottom: 0;
+		right: 0;
+	width: 100%;
+}
+
+#bars img[alt="bands"]{
+	position: absolute;
+		z-index: 3;
+		top: 30%;
+		right: 22%;
+	width: 20%;
+}
+
+#bars img[alt="barplan"]{
+	position: absolute;
+		z-index: 7;
+		bottom: 6.5%;
+		left:	2%;
+	width: 30%;
+}
+
+#bars #newswolke{
+	background-image: url(../img/site/newswolke.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	position: absolute;
+		z-index: 6;
+		top: 0;
+		left: 1%;
+	width: 600px;
+	height: 383px;
+	text-align: center;
+	font-size: 130%;
+}
+
+#bars #newswolke p{
+	margin-top: 5.6em;
+}
+
+
+/***********/
+/* kontakt */
+/***********/
+
+#ground{
+	text-align: center;
+}
+
+#ground img[alt="kiste"]{
+	position: absolute;
+		bottom: 10%;
+		left: 9%;
+	height: 10em;
+}
+#ground img[alt="knochen"]{
+	position: absolute;
+		top: 10%;
+		left: 20%;
+	height: 10em;
+}
+
+#ground img[alt="knochen2"]{
+	position: absolute;
+		top: 53%;
+		right: 14%;
+	height: 12em;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	-o-tranform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.4);
+}
+
+#ground img[alt="diamant"]{
+	position: absolute;
+		top: 12%;
+		right: 9%;
+	height: 12em;
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-o-tranform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0.3);
+}
+
+#contact{
+	height: 500px;
+	color: white;
+	text-align: left;
+}
+
+#contact #data{
+	width: 20em;
+	margin: 0 auto;
+	padding-top: 10em;
+}
+
+#contact #data ul{
+	list-style: none;
+	margin: 0;
+}
+
+#contact #data ul li{
+	padding-bottom: 0.5em;
+}
+
+#contact #data ul li:first-child{
+	margin-left: -1.5em;
+	font-weight: 400%;
+	padding-bottom: 1em;
+}
+
+#contact #data hr{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#contact #data img{
+	float: left;
+	margin-right: 1.5em;
+	width: 60px;
+}
+
+#ground p{
+	color: white;
+	padding: 0;
+	margin: 0;
+	font-weight: lighter;
+}
+
+#ground p a{
+	color: white;
+	text-decoration: none;
+}
+
+#ground #in{
+	padding-left: 4em;
+}
